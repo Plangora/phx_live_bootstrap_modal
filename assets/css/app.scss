@@ -1,0 +1,24 @@
+/* This file is for your main application css. */
+@import "~bootstrap";
+@import "../node_modules/nprogress/nprogress.css";
+
+.alert:empty {
+  display: none;
+}
+
+/* LiveView specific classes for your customizations */
+.phx-no-feedback.invalid-feedback, .phx-no-feedback .invalid-feedback {
+  display: none;
+}
+
+.phx-click-loading {
+  opacity: 0.5;
+  transition: opacity 1s ease-out;
+}
+
+.phx-disconnected{
+  cursor: wait;
+}
+.phx-disconnected *{
+  pointer-events: none;
+}
